@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+*:focus {
+  outline: none;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+.page {
+  background-color: #f1f5f9;
+  min-height: 100vh;
+}
+.nav-bar {
+  width: 250px;
+  box-shadow: 0 0 10px #ddd;
+}
+.nav-bar > h3 {
+  margin-bottom: 50px;
+}
+.nav-bar > h3::before,
+.nav-bar > h3::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+  background-color: black;
+}
+.nav-bar > h3::before {
+  width: 80px;
+  height: 2px;
+  bottom: -20px;
+}
+.nav-bar > h3::after {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  bottom: -27px;
+  border: 3px solid white;
+}
+.nav-bar ul li  {
+  
+}
+.nav-bar ul li a {
+  transition: .3s;
+  margin-bottom: 5px;
+}
+.nav-bar ul li a.active, 
+.nav-bar ul li a:hover {
+  background-color: #f6f6f6
+}
+.nav-bar ul li a span {
+  font-size: 14px;
+  margin-left: 10px;
+}
+@media (max-width: 767px) {
+  .nav-bar {
+    width: 58px;
+    padding: 10px
+  }
+  .nav-bar > h3 {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+  .nav-bar > h3::before,
+  .nav-bar > h3::after,
+  .nav-bar ul li a span {
+    display: none;
+  }
+  .nav-bar > h3 span {
+    display: block;
+  }
+}
