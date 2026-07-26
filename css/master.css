@@ -1,3 +1,13 @@
+:root {
+  /* Main Colors */
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
+  --main-transition: 0.3s;
+}
 * {
   box-sizing: border-box;
 }
@@ -80,3 +90,52 @@ ul {
     display: block;
   }
 }
+/* Start Content */
+.head {
+  
+}
+.head .search input {
+  padding-left: 30px;
+  border: 1px solid #ccc;
+  margin-left: 5px;
+  width: 160px;
+  border-image: none;
+  transition: width var(--main-transition);
+}
+.head .search::before {
+  content: '\f002';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: var(--grey-color);
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  font-size: 13px;
+  transform: translateY(-50%);
+}
+.head input::placeholder{
+  transition: var(--main-transition);
+  font-size: 13px;
+}
+.head input:focus {
+  width: 200px
+}
+.head input:focus::placeholder{
+  opacity: 0;
+}
+.head .icons .notification::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: var(--red-color);
+  top: -4px;
+  right: -1px;
+}
+.head .icons img {
+  width: 32px;
+  height: 32px;
+  margin-left: 15px;
+}
+/* End Content */

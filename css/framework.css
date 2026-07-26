@@ -1,3 +1,8 @@
+/* Start Dimensions */
+.w-full {
+  width: 100%;
+}
+/* End Dimensions */
 /* Start Box */
 .d-flex {
   display: flex;
@@ -14,6 +19,9 @@
 /* Start Padding + Margin */
 .p-10 {
   padding: 10px;
+}
+.p-15 {
+  padding: 15px;
 }
 .p-20 {
   padding: 20px;
@@ -45,9 +53,28 @@
 .rad-6 {
   border-radius: 6px;
 }
+.rad-10 {
+  border-radius: 10px;
+}
 /* End Border */
+/* Start Components */
+.between-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.v-centering {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.h-centering {
+  left: 50%;
+  transform: translatex(-50%);
+}
+/* End Components */
 @media (max-width: 767px) {
   .hide-moblie {
     display: none;
   }
 }
+
