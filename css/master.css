@@ -392,9 +392,101 @@ ul {
   background-color: white;
 }
 .project-progress ul li.still::before {
-  animation: filling 1.5s ease infinite;
+  animation: filling 1.5s infinite;
 }
-
+.project-progress > img {
+  width: 160px;
+  bottom: 0;
+  right: 0;
+  opacity: 0.1;
+}
+/* Start Reminders */
+.reminders ul li {
+  margin-top: 15px;
+}
+.reminders ul li span.key {
+  width: 15px;
+  height: 15px;
+}
+.reminders ul li > div {
+  border-color: transparent;
+  border-width: 2px;
+  border-style: solid;
+}
+.reminders ul li > .blue {
+  border-left-color: var(--blue-color);
+}
+.reminders ul li > .green {
+  border-left-color: var(--green-color);
+}
+.reminders ul li > .orange {
+  border-left-color: var(--orange-color);
+}
+.reminders ul li > .red {
+  border-left-color: var(--red-color);
+}
+/* Start Latest Post */
+.latest-post .top img {
+  width: 48px;
+  height: 48px;
+}
+.latest-post .post-content {
+  padding: 20px 0;
+  margin: 20px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  text-transform: capitalize;
+  line-height: 1.8;
+  font-size: 16px;
+}
+/* Start Social */
+.social-media .box {
+  padding-left: 60px;
+  margin-bottom: 15px;
+}
+.social-media .box i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 52px;
+  font-size: 32px;
+  transition: var(--main-transition);
+}
+.social-media .box i:hover {
+  transform: rotate(5deg);
+}
+.social-media .twitter {
+  color: #1da1f2;
+  background-color: rgb(29 161 242 / 20%);
+}
+.social-media .twitter i, 
+.social-media .twitter a {
+  background-color: #1da1f2;
+}
+.social-media .facebook {
+  color: #1877f2;
+  background-color: rgb(24 119 242 / 20%);
+}
+.social-media .facebook i, 
+.social-media .facebook a {
+  background-color: #1877f2;
+}
+.social-media .youtube {
+  color: #ff0000;
+  background-color: rgb(255 0 0 / 20%);
+}
+.social-media .youtube i, 
+.social-media .youtube a {
+  background-color: #ff0000;
+}
+.social-media .linkedin {
+  color: #0a66c2;
+  background-color: rgb(10 102 194 / 20%);
+}
+.social-media .linkedin i, 
+.social-media .linkedin a {
+  background-color: #0a66c2;
+}
 /* End Content */
 /* Animation */
 @keyframes filling {
@@ -402,7 +494,7 @@ ul {
   100% {
     background-color: var(--blue-color);
   }
-  70% {
+  60% {
     background-color: white;
   }
 }

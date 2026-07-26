@@ -15,6 +15,9 @@
 .w-fit {
   width: fit-content;
 }
+.h-full {
+  height: 100%;
+}
 /* Start Box */
 .ovr-hidden {
   overflow: hidden;
@@ -61,6 +64,9 @@
 .p-relative {
   position: relative;
 }
+.p-absolute {
+  position: absolute;
+}
 @media (max-width: 767px) {
   .hide-mobile {
     display: none;
@@ -91,6 +97,9 @@
 .pb-20 {
   padding-bottom: 20px;
 }
+.pl-15 {
+  padding-left: 15px;
+}
 .m-0 {
   margin: 0
 }
@@ -102,6 +111,9 @@
 }
 .mt-20 {
   margin-top: 20px;
+}
+.mr-5 {
+  margin-right: 5px;
 }
 .mr-10 {
   margin-right: 10px;
@@ -124,6 +136,9 @@
 .mb-20 {
   margin-bottom: 20px;
 }
+.ml-10 {
+  margin-left: 10px;
+}
 /* Start Color */
 .bg-white {
   background-color: white;
@@ -139,6 +154,9 @@
 }
 .bg-green {
   background-color: var(--green-color);
+}
+.bg-red {
+  background-color: var(--red-color);
 }
 .c-white {
   color: white;
@@ -190,6 +208,12 @@
 .b-none {
   border: none;
 }
+.bl-15 {
+  border-left: 15px;
+}
+.rad-half {
+  border-radius: 50%;
+}
 .rad-6 {
   border-radius: 6px;
 }
@@ -206,6 +230,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.ideal-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .v-centering {
   top: 50%;

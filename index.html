@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Template IV</title>
-    <!-- Framework -->
-    <link rel="stylesheet" href="css/framework.css">
-    <!-- Main File -->
-    <link rel="stylesheet" href="css/master.css">
     <!-- Render All Elements Normally -->
     <link rel="stylesheet" href="css/normalize.css">
     <!-- Font Awesome Library -->
     <link rel="stylesheet" href="css/all.min.css">
+    <!-- Framework -->
+    <link rel="stylesheet" href="css/framework.css">
+    <!-- Main File -->
+    <link rel="stylesheet" href="css/master.css">
     <!-- Open-Sans Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -376,7 +376,7 @@
             </ul>
           </div>
           <!-- Project Progress -->
-          <div class="project-progress dashboard-section-format">
+          <div class="project-progress dashboard-section-format p-relative">
             <h2 class="mt-0 mb-20">Last Project Progress</h2>
             <ul>
               <li class="d-flex align-c done">Got The Project</li>
@@ -385,6 +385,89 @@
               <li class="d-flex align-c still">Test The Project</li>
               <li class="d-flex align-c none">Finish The Project & Get Money</li>
             </ul>
+            <img class="launch-icon p-absolute hide-mobile" src="imgs/project.png" alt="">
+          </div>
+          <!-- Reminders -->
+          <div class="reminders dashboard-section-format ">
+            <h2 class="mt-0 mb-20">Reminders</h2>
+            <ul class="m-0">
+              <li class="d-flex align-c mt-15">
+                <span class="key bg-blue rad-half mr-15"></span>
+                <div class="blue pl-15">
+                  <p class="fs-14 c-black fw-bold mt-0 mb-5">Check My Tasks List</p>
+                  <span class="fs-13 c-grey">28/9/2026 - 12:00am</span>
+                </div>
+              </li>
+              <li class="d-flex align-c mt-15">
+                <span class="key bg-green rad-half mr-15"></span>
+                <div class="green pl-15">
+                  <p class="fs-14 c-black fw-bold mt-0 mb-5">Check My Projects</p>
+                  <span class="fs-13 c-grey">26/10/2026 - 12:00am</span>
+                </div>
+              </li>
+              <li class="d-flex align-c mt-15">
+                <span class="key bg-orange rad-half mr-15"></span>
+                <div class="orange pl-15">
+                  <p class="fs-14 c-black fw-bold mt-0 mb-5">Call All My Clients</p>
+                  <span class="fs-13 c-grey">05/11/2026 - 12:00am</span>
+                </div>
+              </li>
+              <li class="d-flex align-c mt-15">
+                <span class="key bg-red rad-half mr-15"></span>
+                <div class="red pl-15">
+                  <p class="fs-14 c-black fw-bold mt-0 mb-5">Finish The Development Workshop</p>
+                  <span class="fs-13 c-grey">20/12/2026 - 12:00am</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- Latest Post -->
+          <div class="latest-post dashboard-section-format">
+            <h2 class="mt-0 mb-20">Latest Post</h2>
+            <div class="top d-flex align-c">
+              <img class="rad-half mr-15" src="imgs/avatar.png" alt="">
+              <div class="info">
+                <h3 class="fs-16 mb-5">Hema Vetsh</h3>
+                <p class=" mt-0 c-grey fs-16">About 3 Hours Ago</p>
+              </div>
+            </div>
+            <div class="post-content ">
+            You can fool all of the people some of the time, and some of the people all of the time, but you can't fool all of the people all of the time.
+            </div>
+            <div class="post-stats between-flex">
+              <div class="d-flex align-c c-grey">
+                <i class="fa-regular fa-heart mr-5"></i>
+                <span>1.8K</span>
+              </div>
+              <div class="d-flex align-c c-grey">
+                <i class="fa-regular fa-comments mr-5"></i>
+                <span>500</span>
+              </div>
+            </div>
+          </div>
+          <!-- Start Social Media -->
+          <div class="social-media dashboard-section-format">
+            <h2 class="mt-0 mb-20">Social Media Stats</h2>
+            <div class="box twitter between-flex p-15 p-relative">
+              <i class="fa-brands fa-twitter h-full c-white ideal-flex"></i>
+              <span class="fs-16 ml-10">90K Followers</span>
+              <a class="btn-shape c-white" href="#">Follow</a>
+            </div>
+            <div class="box facebook between-flex p-15 p-relative">
+              <i class="fa-brands fa-facebook-f h-full c-white ideal-flex"></i>
+              <span class="fs-16 ml-10">2M Like</span>
+              <a class="btn-shape c-white" href="#">Like</a>
+            </div>
+            <div class="box youtube between-flex p-15 p-relative">
+              <i class="fa-brands fa-youtube h-full c-white ideal-flex"></i>
+              <span class="fs-16 ml-10">1M Subs</span>
+              <a class="btn-shape c-white" href="#">Subscribe</a>
+            </div>
+            <div class="box linkedin between-flex p-15 p-relative">
+              <i class="fa-brands fa-linkedin h-full c-white ideal-flex"></i>
+              <span class="fs-16 ml-10">70K Followers</span>
+              <a class="btn-shape c-white" href="#">Follow</a>
+            </div>
           </div>
         </div>
         <!-- End Wrapper -->
