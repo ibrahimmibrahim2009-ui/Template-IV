@@ -340,9 +340,7 @@ ul {
   padding: 4px 10px;
 }
 /* Start Latest Tasks */
-.latest-tasks {
-  
-}
+
 .latest-tasks .task-row:not(:last-child) {
   border-bottom: 1px solid #ddd;
 }
@@ -352,5 +350,43 @@ ul {
 }
 .latest-tasks .task-row:nth-child(4) {
   opacity: .3;
+}
+/* Latest Uploads */
+.latest-uploads ul li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+.latest-uploads ul li img {
+  width: 40px;
+  height: 40px;
+}
+/* Project Progress */
+.project-progress ul {
+  position: relative;
+}
+.project-progress ul::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background-color: var(--blue-color);
+  left: 9px;
+}
+.project-progress ul li {
+  margin-top: 25px;
+}
+.project-progress ul li::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 15px;
+  outline: 2px solid var(--blue-color);
+  outline-offset: 2px;
+  z-index: 1;
+}
+
+.project-progress ul li.done::before {
+  background-color: var(--blue-color);
 }
 /* End Content */
