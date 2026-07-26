@@ -312,4 +312,21 @@ ul {
     width: 100%
   }
 }
+/* Start Latest News */
+.latest-news {
+
+}
+.latest-news .news-row:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+.latest-news .news-row  img {
+  width: 100px;
+  border-radius: 6px;
+}
+.latest-news .news-row  .info {
+  flex: 1;
+}
+.latest-news .news-row .label {
+  padding: 4px 10px;
+}
 /* End Content */
