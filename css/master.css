@@ -103,9 +103,7 @@ ul {
   }
 }
 /* Start Content */
-.head {
-  
-}
+/* Start Head */
 .head .search input {
   padding-left: 30px;
   border: 1px solid #ccc;
@@ -168,5 +166,31 @@ ul {
 .content > h1::after {
   background-color: black;
   width: 40px;
+}
+/* End Head */
+/* Start Wrapper */
+.wrapper {
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  margin-right: 20px;
+  margin-left: 20px;
+}
+@media (max-width: 767px) {
+  .wrapper {
+    grid-template-columns: minmax(200px, 1fr);
+    margin-right: 10px;
+    margin-left: 10px;
+}
+/* End Wrapper */
+/* Start Welcome */
+.welcome .body {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  justify-content: space-around;
+}
+.welcome .body > div {
+  
+}
+.welcome a {
+  margin: 15px 0 15px auto;
 }
 /* End Content */
