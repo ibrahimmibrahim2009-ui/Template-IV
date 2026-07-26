@@ -181,16 +181,11 @@ ul {
     margin-left: 10px;
 }
 /* End Wrapper */
-/* Start Welcome */
-.welcome .body {
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
-  justify-content: space-around;
+/* Welcome Card */
+.welcome .intro img {
+  width: 200px;
 }
-.welcome .body > div {
-  
-}
-.welcome a {
-  margin: 15px 0 15px auto;
+.welcome .body div {
+  flex: 1;
 }
 /* End Content */
