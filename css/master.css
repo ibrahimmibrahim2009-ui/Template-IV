@@ -369,7 +369,7 @@ ul {
   height: 100%;
   width: 2px;
   background-color: var(--blue-color);
-  left: 9px;
+  left: 11px;
 }
 .project-progress ul li {
   margin-top: 25px;
@@ -382,11 +382,27 @@ ul {
   border-radius: 50%;
   margin-right: 15px;
   outline: 2px solid var(--blue-color);
-  outline-offset: 2px;
+  border: 2px solid white;
   z-index: 1;
 }
-
 .project-progress ul li.done::before {
   background-color: var(--blue-color);
 }
+.project-progress ul li.none::before {
+  background-color: white;
+}
+.project-progress ul li.still::before {
+  animation: filling 1.5s ease infinite;
+}
+
 /* End Content */
+/* Animation */
+@keyframes filling {
+  0%, 
+  100% {
+    background-color: var(--blue-color);
+  }
+  70% {
+    background-color: white;
+  }
+}
