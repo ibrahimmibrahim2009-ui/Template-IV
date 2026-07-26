@@ -24,7 +24,7 @@
 }
 @media (max-width: 767px) {
   .block-mobile {
-    display: block;
+    display: block !important;
   }
 }
 .d-flex {
@@ -47,7 +47,7 @@
   position: relative;
 }
 @media (max-width: 767px) {
-  .hide-moblie {
+  .hide-mobile {
     display: none;
   }
 }
@@ -104,6 +104,9 @@
 }
 .fs-14 {
   font-size: 14px;
+}
+.fw-bold {
+  font-weight: bold;
 }
 /* Start Border */
 .rad-6 {

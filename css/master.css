@@ -185,8 +185,44 @@ ul {
 /* Welcome Card */
 .welcome .intro img {
   width: 200px;
+  margin-bottom: -10px;
+}
+@media (max-width: 767px) {
+  .welcome .intro {
+    padding-bottom: 30px;
+  }
+}
+.welcome > img {
+  width: 64px;
+  height: 64px;
+  position: relative;
+  margin-left: 15px;
+  margin-top: -32px;
+  border: 2px solid white;
+  border-radius: 50%;
+  box-shadow: rgb(221, 221, 221) 0px 0px 5px;
+  padding: 2px;
+}
+@media (max-width: 767px) {
+  .welcome > img {
+    margin-left: 0;
+  }
+}
+.welcome .body {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 }
 .welcome .body div {
   flex: 1;
+}
+.welcome .body div:not(:last-child) {
+  margin-bottom: 20px;
+}
+.welcome a {
+  margin: 0 15px 15px auto;
+  transition: var(--main-transition);
+}
+.welcome a:hover {
+  background-color: var(--blue-alt-color);
 }
 /* End Content */
