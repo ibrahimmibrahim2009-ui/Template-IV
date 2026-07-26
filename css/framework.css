@@ -33,6 +33,9 @@
 .align-c {
   align-items: center;
 }
+.justify-c {
+  justify-content: center;
+}
 .space-between {
   justify-content: space-between;
 }
@@ -76,6 +79,9 @@
 .mt-20 {
   margin-top: 20px;
 }
+.mb-10 {
+  margin-bottom: 10px;
+}
 .mb-20 {
   margin-bottom: 20px;
 }
@@ -89,6 +95,12 @@
 .bg-blue {
   background-color: var(--blue-color);
 }
+.bg-orange {
+  background-color: var(--orange-color);
+}
+.bg-green {
+  background-color: var(--green-color);
+}
 .c-white {
   color: white;
 }
@@ -97,6 +109,15 @@
 }
 .c-grey {
   color: var(--grey-color);
+}
+.c-blue {
+  color: var(--blue-color);
+}
+.c-orange {
+  color: var(--orange-color);
+}
+.c-green {
+  color: var(--green-color);
 }
 /* Start Text */
 .txt-c {
