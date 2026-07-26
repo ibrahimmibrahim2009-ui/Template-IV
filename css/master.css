@@ -225,4 +225,17 @@ ul {
 .welcome a:hover {
   background-color: var(--blue-alt-color);
 }
+/* Start Quick Draft */
+.quick-draft form textarea {
+  min-height: 180px;
+  resize: none;
+}
+.quick-draft form .save {
+  margin-left: auto;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+.quick-draft form .save:hover {
+  background-color: var(--blue-alt-color);
+}
 /* End Content */
