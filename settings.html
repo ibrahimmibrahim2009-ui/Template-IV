@@ -90,7 +90,7 @@
         <!-- Start Settings Page -->
         <div class="settings-page d-grid m-20 gap-20">
           <!-- Site Control -->
-          <div class="section-format ">
+          <div class="site-control section-format ">
             <h2 class="mt-0 mb-10">Site Control</h2>
             <p class="fs-15 c-grey mb-20">Control The Website If There Is Maintenance</p>
             <div class="between-flex mb-15">
@@ -105,8 +105,64 @@
                 </label>
               </div>
             </div>
-            <textarea class="close-message p-10 rad-6 d-block w-full" placeholder="Close Message Content"></textarea>
+            <textarea class="close-message b-none b-ccc p-10 rad-6 d-block w-full" placeholder="Close Message Content"></textarea>
           </div>
+          <!-- End Site Control -->
+          <!-- General Info -->
+          <div class="general-info section-format">
+            <h2 class="mt-0 mb-10">General Info</h2>
+            <p class="fs-15 c-grey mb-20">General Information About Your Account</p>
+            <div class="mb-15">
+              <label class="mb-10 fs-14 d-block c-grey" for="first">First Name</label>
+              <input class=" first d-block w-full b-ccc p-10 rad-6 fs-13" id="first" type="text" placeholder="First Name">
+            </div>
+            <div class="mb-15">
+              <label class="mb-10 fs-14 d-block c-grey" for="last">Last Name</label>
+              <input class="last d-block w-full b-ccc p-10 rad-6 fs-13" id="last" type="text" placeholder="Last Name">
+            </div>
+            <div>
+              <div>
+                <label class="mb-10 fs-14 d-block c-grey" for="email">Email</label>
+                <input class="email d-block w-full b-ccc p-10 rad-6 fs-13 mr-10" id="email" type="email" placeholder="o@nn.sa">
+                <a class="c-blue fs-16" href="#">Change</a>
+              </div>
+            </div>
+          </div>
+            <!-- Social Info -->
+            <div class="security-info section-format">
+              <h2 class="mt-0 mb-10">Security Info</h2>
+              <p class="fs-15 c-grey mb-20">Security Information About Your Account</p>
+              <!-- Section -->
+              <div class="between-flex mb-15 pb-15">
+                <div class="info">
+                  <span>Password</span>
+                  <span class="fs-13 d-block c-grey mt-5">Last Change On 25/10/2025</span>
+                </div>
+                <a class="bg-blue c-white btn-shape fs-16" href="#">Change</a>
+              </div>
+              <!-- Section -->
+              <div class="between-flex mb-15 pb-15">
+                <div class="info">
+                  <span>Two-Factor Authentication</span>
+                  <span class="fs-13 d-block c-grey mt-5">Enable/Disable The Future</span>
+                </div>
+                <div>
+                  <label for="hema">
+                    <input id="hema" class="toggle-checkbox" type="checkbox">
+                    <div class="toggle-switch"></div>
+                  </label>
+                </div>
+              </div>
+              <!-- Section -->
+              <div class="between-flex mb-15 pb-15">
+                <div class="info">
+                  <span>Devices</span>
+                  <span class="fs-13 d-block c-grey mt-5">check The Login Devices List</span>
+                </div>
+                <a class="btn-shape c-black bg-eee" href="#">Devices</a>
+              </div>
+            </div>
+          <!-- End General Info -->
         </div>
       </div>
     </div>

@@ -223,6 +223,12 @@
 .rad-10 {
   border-radius: 10px;
 }
+.b-none {
+  border: none;
+}
+.b-ccc {
+  border: 1px solid #ccc;
+}
 @media (max-width: 767px) {
   .txt-c-mobile {
     text-align: center;

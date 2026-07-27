@@ -108,6 +108,7 @@ ul {
 label .toggle-checkbox {
   -webkit-appearance: none;
   appearance: none;
+  display: none;
 }
 label .toggle-switch {
   position: relative;
@@ -593,8 +594,19 @@ table .label {
 .settings-page .close-message {
   min-height: 150px;
   resize: none;
-  border: 1px solid #ccc;
   font-size: 14px;
+}
+/* General Info */
+.general-info .email {
+  display: inline-flex;
+  width: calc(100% - 80px);
+  cursor: no-drop;
+  background-color: #f0f4f8;
+  color: #bbb;
+}
+/* Security Info */
+.security-info > div:not(:last-child) {
+  border-bottom: 1px solid #eee;
 }
 /* End Settings Page */
 /* Animation */
