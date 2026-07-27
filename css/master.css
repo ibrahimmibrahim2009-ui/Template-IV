@@ -597,12 +597,30 @@ table .label {
   font-size: 14px;
 }
 /* General Info */
+.general-info .trick {
+  display: flex;
+  align-items: flex-end;
+}
 .general-info .email {
-  display: inline-flex;
-  width: calc(100% - 80px);
   cursor: no-drop;
   background-color: #f0f4f8;
   color: #bbb;
+}
+.general-info a {
+  position: relative;
+  overflow: hidden;
+  height: 36px;
+}
+.general-info a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--blue-color);
+  bottom: 0px;
+  left: 0;
+  z-index: 1;
+  animation: trick 1s linear infinite;
 }
 /* Security Info */
 .security-info > div:not(:last-child) {
@@ -653,5 +671,13 @@ table .label {
   }
   60% {
     background-color: white;
+  }
+}
+@keyframes trick {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 100%;
   }
 }
