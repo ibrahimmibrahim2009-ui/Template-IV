@@ -487,6 +487,12 @@ ul {
 .social-media .linkedin a {
   background-color: #0a66c2;
 }
+/* Start Project Table */
+.project-table {
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
 /* End Content */
 /* Animation */
 @keyframes filling {
