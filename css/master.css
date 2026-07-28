@@ -675,35 +675,29 @@ table .label {
   padding-left: 30px;
   cursor: pointer;
 }
-.widgets-control .control label::before {
-  content: '';
+.widgets-control .control label::before,
+.widgets-control .control label::after {
   position: absolute;
   left: 0;
-  width: 14px;
-  height: 14px;
   top: 50%;
   margin-top: -9px;
-  border: 2px solid var(--grey-color);
   border-radius: 4px;
-  overflow: hidden;
   display: flex;
   justify-content:center;
   align-items: center;
+}
+.widgets-control .control label::before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--grey-color);
 }
 .widgets-control .control label::after {
   content: '\f00c';
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  margin-top: -9px;
   width: 18px;
   height: 18px;
-  border-radius: 4px;
-  display: flex;
-  justify-content:center;
-  align-items: center;
   font-size: 12px;
   color: white;
   background-color: var(--blue-color);
@@ -723,29 +717,27 @@ table .label {
   position: relative;
   cursor: pointer;
 }
-.backup-manager .radio label::before {
+.backup-manager .radio label::before, 
+.backup-manager .radio label::after {
   content: '';
   position: absolute;
   top: 50%;
+  border-radius: 50%;
+  transition: var(--main-transition);
+}
+.backup-manager .radio label::before {
   transform: translateY(-50%);
   left: 0;
   width: 18px;
   height: 18px;
-  border-radius: 50%;
   border: 2px solid grey;
-  transition: var(--main-transition);
 }
 .backup-manager .radio label::after {
-  content: '';
-  position: absolute;
   left: 5px;
-  top: 50%;
   transform: translateY(-49%);
   width: 12px;
   height: 12px;
-  border-radius: 50%;
   background-color: var(--blue-color);
-  transition: var(--main-transition);
   scale: 0;
 }
 .backup-manager .radio input[type="radio"]:checked + label::before {
@@ -754,6 +746,7 @@ table .label {
 .backup-manager .radio input[type="radio"]:checked + label::after {
   scale: 1;
 }
+/* Servers section */
 @media (max-width: 767px) {
   .servers {
     flex-wrap: wrap
