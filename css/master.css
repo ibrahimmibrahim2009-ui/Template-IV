@@ -662,6 +662,58 @@ table .label {
 .social-info .input-field:focus-within i {
   color: black;
 }
+/* Widgets Control */
+.widgets-control input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.widgets-control .control {
+  margin-bottom: 15px;
+}
+.widgets-control .control label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+.widgets-control .control label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  top: 50%;
+  margin-top: -9px;
+  border: 2px solid var(--grey-color);
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.widgets-control .control label::after {
+  content: '\f00c';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -9px;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  font-size: 12px;
+  color: white;
+  background-color: var(--blue-color);
+  transition: var(--main-transition);
+  scale: 0;
+  transform: rotate(360deg);
+}
+.widgets-control .control input[type="checkbox"]:checked + label::after {
+  scale: 1;
+}
 /* End Settings Page */
 /* Animation */
 @keyframes filling {
