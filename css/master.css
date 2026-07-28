@@ -776,6 +776,37 @@ table .label {
   color: var(--blue-color);
 }
 /* End Settings Page */
+/* Start Profile Page */
+/* Overview */
+.profile-page .overview {
+  
+}
+.overview .avatar-box {
+  width: 300px;
+}
+@media (min-width: 768px) {
+  .overview .avatar-box {
+    border-right: 1px solid #eee;
+  }
+}
+.overview .avatar-box img {
+  width: 120px;
+  height: 120px;
+}
+.overview .avatar-box .level {
+  width: 70%;
+  height: 4px;
+  margin: auto;
+}
+.overview .avatar-box .level span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+.overview .avatar-box img {
+
+}
 /* Animation */
 @keyframes filling {
   0%, 
