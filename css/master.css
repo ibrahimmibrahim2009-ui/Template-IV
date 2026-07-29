@@ -13,6 +13,7 @@
 }
 body {
   font-family: "Open Sans", sans-serif;
+  font-weight: 500;
   margin: 0;
   padding: 0;
 }
@@ -778,8 +779,10 @@ table .label {
 /* End Settings Page */
 /* Start Profile Page */
 /* Overview */
-.profile-page .overview {
-  
+@media (max-width: 767px) {
+  .profile-page .overview {
+    flex-direction: column;
+  }
 }
 .overview .avatar-box {
   width: 300px;
@@ -806,6 +809,37 @@ table .label {
 }
 .overview .avatar-box img {
 
+}
+.overview .info-box .box {
+  flex-wrap: wrap;
+  border-bottom: 1px solid #eee;
+  transition: 0.3s;
+}
+.overview .info-box .box > div {
+  margin-top: 10px;
+}
+@media (min-width: 768px) {
+  .overview .info-box .box > div {
+    min-width: 300px;
+  }
+}
+@media (max-width: 767px) {
+  .overview .info-box .box > div {
+    width: 100%;
+  }
+}
+.overview .info-box .toggle-switch {
+  height: 20px;
+}
+.overview .info-box .toggle-switch::before {
+  height: 14px;
+  width: 14px;
+  top: 3px;
+  left: 4px;
+  font-size: 8px;
+}
+.overview .info-box .toggle-checkbox:checked + .toggle-switch::before {
+  left: 60px;
 }
 /* Animation */
 @keyframes filling {
