@@ -164,6 +164,9 @@
 .bg-blue {
   background-color: var(--blue-color);
 }
+.bg-alt-blue {
+  background-color: var(--blue-alt-color);
+}
 .bg-orange {
   background-color: var(--orange-color);
 }

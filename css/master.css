@@ -899,14 +899,18 @@ table .label {
 .projects-page {
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
 }
+
 @media (max-width: 767px) {
   .projects-page {
-    grid-template-columns: minmax(200px, 1fr)
+    grid-template-columns: minmax(200px, 1fr);
+    gap: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
   }
 }
 .projects-page .project > .date {
-  top: 20px;
-  right: 20px;
+  top: 10px;
+  right: 10px;
 }
 .projects-page .project .team {
   min-height: 80px;
@@ -943,8 +947,30 @@ table .label {
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
 }
+.projects-page .do span {
+  width: fit-content;
+}
+@media (max-width: 767px) {
+  .projects-page .do {
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px
+  }
+  .projects-page .do span {
+    margin: 0;
+  }
+}
 .projects-page .do span:not(:last-child) {
   margin-right: 5px;
+}
+@media (max-width: 767px) {
+  .projects-page .info {
+    flex-direction: column;
+    gap: 10px
+  }
+  .projects-page .info .prog {
+    max-width: 100%;
+  }
 }
 .projects-page .info .prog {
   height: 8px;
