@@ -977,6 +977,64 @@ table .label {
   width: 260px;
 }
 /* End Projects Page */
+/* Start Courses Page */
+.courses-page {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+@media (max-width: 767px) {
+  .courses-page {
+    grid-template-columns: minmax(200px, 1fr);
+    gap: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+}
+.courses-page .course {
+  overflow: hidden;
+}
+.courses-page .course::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  top: 48px;
+}
+.courses-page .course::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  top: calc(48px + 4px);
+}
+.courses-page .course .cover {
+  max-width: 100%;
+}
+.courses-page .course .instructor {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 2px solid white;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+}
+.courses-page .course > div p {
+  text-transform: capitalize;
+  line-height: 1.6;
+}
+.courses-page .course .info {
+  border-top: 1px solid #eee;
+}
+.courses-page .course .info .title {
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 13px;
+  top: -11px;
+  height: 23px;
+}
+/* End Courses Page */
 /* Animation */
 @keyframes filling {
   0%, 
