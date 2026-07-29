@@ -810,6 +810,9 @@ table .label {
 .overview .avatar-box img {
 
 }
+.overview .info-box {
+  flex: 1;
+}
 .overview .info-box .box {
   flex-wrap: wrap;
   border-bottom: 1px solid #eee;
@@ -841,6 +844,57 @@ table .label {
 .overview .info-box .toggle-checkbox:checked + .toggle-switch::before {
   left: 60px;
 }
+.other-data .skills {
+  flex-grow: 1;
+}
+.other-data .skills ul li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+.other-data > div {
+  margin-top: 20px;
+}
+.other-data .skills ul li span {
+  display: inline-flex;
+  background-color: #eee;
+  font-size: 15px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .other-data .skills ul li span {
+    margin-top: 5px
+  }
+}
+.other-data .skills ul li span:not(:last-child) {
+  margin-right: 5px;
+}
+.other-data .activities {
+  flex-grow: 2;
+}
+.other-data .activity:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+.other-data .activity img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .other-data .activity img {
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 767px) {
+  .other-data .activity .info {
+    margin: 20px 0;
+  } 
+}
+@media (min-width: 768px) {
+  .other-data .activity .date {
+    margin-left: auto;
+    text-align: right;
+  } 
+}
+
 /* Animation */
 @keyframes filling {
   0%, 
