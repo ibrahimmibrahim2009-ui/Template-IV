@@ -894,7 +894,63 @@ table .label {
     text-align: right;
   } 
 }
-
+/* End Profile Page */
+/* Start Projects Page */
+.projects-page {
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+@media (max-width: 767px) {
+  .projects-page {
+    grid-template-columns: minmax(200px, 1fr)
+  }
+}
+.projects-page .project > .date {
+  top: 20px;
+  right: 20px;
+}
+.projects-page .project .team {
+  min-height: 80px;
+}
+.projects-page .project .team a {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.projects-page .project .team a:hover {
+  z-index: 100;
+  transition: var(--main-transition);
+}
+.projects-page .team a:nth-child(2) {
+  left: 25px
+}
+.projects-page .team a:nth-child(3) {
+  left: 50px;
+}
+.projects-page .team a:nth-child(4) {
+  left: 75px;
+}
+.projects-page .team a:nth-child(5) {
+  left: 100px;
+}
+.projects-page .team img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.projects-page .do {
+  justify-content: flex-end;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.projects-page .do span:not(:last-child) {
+  margin-right: 5px;
+}
+.projects-page .info .prog {
+  height: 8px;
+  width: 260px;
+}
+/* End Projects Page */
 /* Animation */
 @keyframes filling {
   0%, 
