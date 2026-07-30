@@ -1102,6 +1102,10 @@ table .label {
 .friends-page .friend .join {
   padding-top: 10px;
 }
+.friends-page .friend .buttons {
+  display: flex;
+  gap: 5px;
+}
 /* End Friends Page */
 /* Animation */
 @keyframes filling {
