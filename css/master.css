@@ -1044,6 +1044,65 @@ table .label {
   height: 23px;
 }
 /* End Courses Page */
+/* Start Friends Page */
+.friends-page {
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+@media (max-width: 767px) {
+  .friends-page {
+    grid-template-columns: minmax(200px, 1fr);
+    gap: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+}
+.friends-page .friend .contact {
+  top: 10px;
+  left: 10px;
+}
+.friends-page .friend .contact i {
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 50%;
+  color: #666;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.friends-page .friend .contact i:hover {
+  background-color: var(--blue-color);
+  color: white;
+}
+.friends-page .friend img {
+  width: 100px;
+  height: 100px;
+}
+.friends-page .friend ul.info {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.friends-page .friend ul.info > span {
+  font-size: 40px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  color: var(--orange-color);
+  opacity: 0.2;
+}
+.friends-page .friend .info li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.friends-page .friend .join {
+  padding-top: 10px;
+}
+/* End Friends Page */
 /* Animation */
 @keyframes filling {
   0%, 
