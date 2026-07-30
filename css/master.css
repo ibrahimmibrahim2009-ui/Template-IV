@@ -1108,6 +1108,10 @@ table .label {
 }
 /* End Friends Page */
 /* Start Files Page */
+.files-page {
+  flex-direction: row-reverse;
+  align-items: flex-start;
+}
 .files-page .files-stats {
   min-width: 260px;
 }
@@ -1143,6 +1147,26 @@ background-color: rgb(244 67 54 / 20%);
 }
 .files-stats a:hover i {
   animation: go-up 0.8s infinite;
+}
+.files-page .files-content {
+  flex: 1;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+@media (max-width: 767px) {
+  .files-page .files-content {
+    grid-template-columns: minmax(200px, 1fr);
+  }
+}
+.files-content .file .icon img {
+  width: 64px;
+  height: 64px;
+  transition: 0.3s;
+}
+.files-content .file:hover img {
+  transform: rotate(-5deg);
+}
+.files-content .file .info {
+  border-top: 1px solid #eee;
 }
 /* End Files Page */
 /* Animation */
