@@ -247,6 +247,9 @@
 .b-ccc {
   border: 1px solid #ccc;
 }
+.b-eee {
+  border: 1px solid #eee;
+}
 @media (max-width: 767px) {
   .txt-c-mobile {
     text-align: center;
