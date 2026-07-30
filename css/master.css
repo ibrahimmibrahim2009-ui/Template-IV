@@ -996,20 +996,29 @@ table .label {
   content: '';
   position: absolute;
   width: 100%;
-  height: 2px;
+  height: 1px;
   background-color: white;
-  top: 48px;
+  top: 49px;
 }
 .courses-page .course::after {
   content: '';
   position: absolute;
   width: 100%;
-  height: 2px;
+  height: 1px;
   background-color: white;
-  top: calc(48px + 4px);
+  top: calc(49px + 4px);
 }
+/* .courses-page .course:nth-child(2)::before, 
+.courses-page .course:nth-child(2)::after {
+  background-color: var(--grey-color);
+}
+.courses-page .course:nth-child(3)::before, 
+.courses-page .course:nth-child(3)::after {
+  background-color: var(--orange-color);
+} */
 .courses-page .course .cover {
   max-width: 100%;
+  border-radius: 10px 10px 0 0 ;
 }
 .courses-page .course .instructor {
   width: 64px;
