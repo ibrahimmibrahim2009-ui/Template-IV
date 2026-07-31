@@ -1184,10 +1184,10 @@ background-color: rgb(244 67 54 / 20%);
 }
 @media (max-width: 767px) {
   .plans-page {
-    grid-template-columns: minmax(200px, 1fr);
+    grid-template-columns: minmax(250px, 1fr);
     gap: 10px;
-    margin-left: -10px;
-    margin-right: -10px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 .plans-page .plan .top {
@@ -1214,6 +1214,7 @@ background-color: rgb(244 67 54 / 20%);
 .plans-page ul li {
   text-transform: capitalize;
   padding: 15px 0;
+  font-size: 15px;
 }
 .plans-page ul li:not(:last-child) {
   border-bottom: 1px solid #eee;
