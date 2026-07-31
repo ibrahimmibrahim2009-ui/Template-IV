@@ -109,6 +109,10 @@
 .pl-15 {
   padding-left: 15px;
 }
+.m-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
 .m-0 {
   margin: 0
 }
@@ -224,6 +228,9 @@
 }
 .fs-25 {
   font-size: 25px;
+}
+.fs-40 {
+  font-size: 40px;
 }
 .fw-bold {
   font-weight: bold;

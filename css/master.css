@@ -26,6 +26,7 @@ a {
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 ::-webkit-scrollbar {
   width: 15px;
@@ -1177,6 +1178,60 @@ background-color: rgb(244 67 54 / 20%);
   border-top: 1px solid #eee;
 }
 /* End Files Page */
+/* Start Plans Page */
+.plans-page {
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+@media (max-width: 767px) {
+  .plans-page {
+    grid-template-columns: minmax(200px, 1fr);
+    gap: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+}
+.plans-page .plan .top {
+  border: 3px solid white;
+  outline: 3px solid transparent;
+}
+.plans-page .plan .top.green {
+  outline-color: var(--green-color);
+}
+.plans-page .plan .top.orange {
+  outline-color: var(--orange-color);
+}
+.plans-page .plan .top.blue {
+  outline-color: var(--blue-color);
+}
+.plans-page .top .price span:last-child {
+  font-size: 40px
+}
+.plans-page .top .price span:first-child {
+  font-size: 25px;
+  top: 0;
+  left: -20px;
+}
+.plans-page ul li {
+  text-transform: capitalize;
+  padding: 15px 0;
+}
+.plans-page ul li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+.plans-page ul li i.yes {
+  color: var(--green-color);
+}
+.plans-page ul li i.help {
+  margin-left: auto;
+  color: var(--grey-color);
+}
+.plans-page ul li i:not(.help, .yes) {
+  color: var(--red-color);
+}
+.plans-page .plan .join {
+  padding: 10px 15px;
+}
+/* End Plans Page */
 /* Animation */
 @keyframes filling {
   0%, 
