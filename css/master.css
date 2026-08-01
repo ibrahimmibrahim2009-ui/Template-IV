@@ -230,7 +230,7 @@ label .toggle-switch::before {
   width: 40px;
 }
 /* End Global Components */
-/* Start Dashboard Page */
+/* Start index Page */
 /* Wrapper */
 .wrapper {
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
@@ -594,7 +594,7 @@ table .label {
   font-size: 13px;
 }
 /* End Content */
-/* End Dashboard Page */
+/* End index Page */
 /* Start Settings Page */
 .settings-page {
   display: grid;
