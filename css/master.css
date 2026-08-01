@@ -79,10 +79,25 @@ ul {
 .nav-bar ul li a {
   transition: .3s;
   margin-bottom: 5px;
+  position: relative;
+  overflow: hidden;
+}
+.nav-bar ul li a::before {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  left: -100%;
+  bottom: 0;
+  background-color: black;
+  transition: var(--main-transition);
 }
 .nav-bar ul li a.active, 
 .nav-bar ul li a:hover {
   background-color: #f6f6f6
+}
+.nav-bar ul li a:hover::before {
+  left: 0
 }
 .nav-bar ul li a span {
   font-size: 14px;
